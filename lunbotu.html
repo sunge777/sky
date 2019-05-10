@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
+		<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.swiper-container {
+		  		 	width: 1800px;
+		    		height: 1000px;
+				}  
+		</style>
+	</head>
+	<body>
+							<div class="swiper-container">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide"><img src="img/CN6.jpg"/></div>
+						        <div class="swiper-slide"><img src="img/CN6.jpg"/></div>
+						        <div class="swiper-slide"><img src="img/CN6.jpg"/></div>
+						    </div>
+						     <div class="swiper-pagination"></div>
+						    
+						    <!-- 如果需要导航按钮 -->
+						    <div class="swiper-button-prev"></div>
+						    <div class="swiper-button-next"></div>
+						    
+						    <!-- 如果需要滚动条 -->
+						    <!--<div class="swiper-scrollbar"></div>-->
+							</div>	
+							
+							<script type="text/javascript">
+							var mySwiper = new Swiper('.swiper-container', {
+							 loop: true, // 循环模式选项
+							 pagination: {
+						     el: '.swiper-pagination',
+						 	},
+						 	
+						    navigation: {
+						      nextEl: '.swiper-button-next',
+						      prevEl: '.swiper-button-prev',
+						    },
+			
+						   }); 
+							</script>
+	</body>
+</html>
